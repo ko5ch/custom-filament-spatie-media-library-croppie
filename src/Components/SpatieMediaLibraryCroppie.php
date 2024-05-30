@@ -191,7 +191,7 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
         return $this->evaluate($this->imageQuality);
     }
 
-    public function croppedSize(string | Closure $croppedSize): static
+    public function croppedSize(string | Closure $croppedSize = 'viewport'): static
     {
         $this->croppedSize = $croppedSize;
 
