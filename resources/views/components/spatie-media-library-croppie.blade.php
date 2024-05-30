@@ -170,7 +170,7 @@
                         showZoomer: `{{$getShowZoomer()}}`,
                         format: `{{$imageFormat}}`,
                         quality: `{{$imageQuality}}`,
-                        croppedSize: `{{$croppedSize}}
+                        croppedSize: `{{$croppedSize}}`
                     })" x-cloak
             >
                 <div class="h-full w-full" wire:ignore >
