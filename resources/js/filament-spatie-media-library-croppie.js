@@ -16,6 +16,7 @@ document.addEventListener('alpine:init', () => {
         showZoomer: config.showZoomer,
         format: config.format,
         quality: config.quality,
+        croppedSize: config.croppedSize,
 
         croppie: {},
         init() {
@@ -72,7 +73,7 @@ document.addEventListener('alpine:init', () => {
         saveCroppie() {
             this.croppie.result({
                 type: "blob",
-                size: "original",
+                size: this.croppedSize,
                 format: this.filetype,
                 quality: 1
             }).then((croppedImage) => {

@@ -169,7 +169,8 @@
                         statePath: `{{$getStatePath()}}`,
                         showZoomer: `{{$getShowZoomer()}}`,
                         format: `{{$imageFormat}}`,
-                        quality: `{{$imageQuality}}`
+                        quality: `{{$imageQuality}}`,
+                        croppedSize: `{{$croppedSize}}
                     })" x-cloak
             >
                 <div class="h-full w-full" wire:ignore >

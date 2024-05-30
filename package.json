@@ -6,8 +6,8 @@
     },
     "devDependencies": {
         "croppie": "^2.6.5",
+        "esbuild": "^0.17.12",
         "node-sass": "^8.0.0",
-        "node-sass-import": "^2.0.1",
-        "esbuild": "^0.17.12"
+        "node-sass-import": "^2.0.1"
     }
 }
