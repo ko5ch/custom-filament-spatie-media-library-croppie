@@ -20,6 +20,7 @@
         $shouldTransformImage = $imageCropAspectRatio || $imageResizeTargetHeight || $imageResizeTargetWidth;
         $imageFormat = $getImageFormat();
         $imageQuality = $getImageQuality();
+        $croppedSize = $getCroppedSize();
     @endphp
 
 
