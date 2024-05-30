@@ -31,7 +31,7 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
 
     protected float | Closure $imageQuality = 0.9;
 
-    protected string | Closure $croppedSize = 'viewport'; //'original', 'viewport'
+    protected string | Closure | array $croppedSize = 'viewport'; //'original', 'viewport', ['width' => , 'height' => ]
 
     public function getAcceptedFileTypes(): ?array
     {
@@ -191,14 +191,14 @@ class SpatieMediaLibraryCroppie extends SpatieMediaLibraryFileUpload
         return $this->evaluate($this->imageQuality);
     }
 
-    public function croppedSize(string | Closure $croppedSize = 'viewport'): static
+    public function croppedSize(string | Closure | array $croppedSize = 'viewport'): static
     {
         $this->croppedSize = $croppedSize;
 
         return $this;
     }
 
-    public function getCroppedSize(): string
+    public function getCroppedSize(): string|array
     {
         return $this->evaluate($this->croppedSize);
     }
